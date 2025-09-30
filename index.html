@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Reservation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Restaurant</title>
+  <link rel="stylesheet" href="mini.css">
+  <link rel="stylesheet" href="mini.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="reservation-container">
-        <h2>Table Reservation</h2>
-        <form action="reserve.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <header class="navbar">
+    <div class="logo">Mini Restaurant </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="restaurant.html">Restaurant</a></li>
+ 	      <li><a href="chef.html">Chefs</a></li>
+	      <li><a href="staff.html">Staff login</a></li>
+        <li><a href="terms.html">Terms & conditions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <center><p style="font-size:x-large;">Wanna grab a Table for your special occaions then you're visiting the perfect website where you can reserve a table, book a chefs to cook the dish you like!!<br>Hurry up and Start booking a table and a chef you like....
+  </p></center>
+  <section class="container">
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\p1.png" id="slide-1" alt="f1" >
+      <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\p2.jpg" id="slide-2" alt="f2" >
+      <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\p3.jpg" id="slide-3" alt="f3">
+      <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\p4.jpg"alt="f4" id="slide-4" >
+      <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\p7.jpg" alt="f5" id="slide-5">
+      <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\p5.png" alt="f6" id="slide-6" >
+  </div>
+  </div>
+  <div class="slider-nav">
+    <a href="#slide-1"></a>
+    <a href="#slide-2"></a>
+    <a href="#slide-3"></a>
+    <a href="#slide-4"></a>
+    <a href="#slide-5"></a>
+    <a href="#slide-6"></a>
+  </div>
+</section>
+  <section id="home" class="hero">
+    <h1>Welcome to Mini Restaurant \</h1>
+    <p>Delicious food and a cozy ambiance</p>
+    <a href="C:\Users\Dell\OneDrive\Desktop\miniproject\restaurant.html" class="btn">Explore Restaurant</a>
+  </section>
+  <div>
+    <img src="C:\Users\Dell\OneDrive\Desktop\miniproject\pp1.jpg" alt="no img" align="right" width="300 px" height="300px">
+    <p>
+      <b>1.Masala Dosa</b><br>
+    <br>The traditional southern Indian dish known as masala dosa is popular throughout the country, made from a batter of soaked rice and black lentils, which are ground into a paste and blended to create a thick batter, usually left to ferment overnight. The mixture is enriched with a handful of fenugreek seeds, which gives the dosa its distinctive golden-brown color and a delicious, crispy texture.
+     <br> It is then baked on a hot oiled griddle into a thin pancake and often stuffed with potatoes, onions, and mustard seeds before being garnished with grated coconut and chopped coriander. It is usually consumed as a quick snack, but can also be a breakfast dish.    
+    </p>
+    <p>
+      <b>2.Biriyani</b><br>
+     <br>Biriyani dates back to the Mughal Empire. The main ingredients are basmati rice, spices, a base of meat, eggs, or vegetables, and many optional ingredients such as dried fruits, nuts, and yogurt. It is believed that Mumtaz Mahal – Emperor Shah Jahan’s queen for whom the Taj Mahal was built as a tomb for – inspired the dish in the 1600s.
+    </p>
+      <b>3.Naan</b><br>
+    <br>Naan is a well-liked flatbread with a chewy texture. It consists of white flour, yeast, eggs, milk, salt, and sugar, baked in a tandoor oven. Its characteristic tear-drop shape is achieved due to the way that the dough droops as it cooks on the tandoor walls.
+    </p>
+    <p>
+      <b>4.Butter Chicken</b> <br>
+      <br>A dish of tender chicken in a mildly spiced tomato sauce. It’s traditionally cooked in a tandoor (a cylindrical clay oven). The gravy is always made first by boiling down fresh tomato, garlic, and cardamom into a bright red pulp. This pulp is then pureed after cooling. Butter, various spices, and khoa (dried whole milk) is then added. The dish originated in Delhi during the 1950s.
+    </p>
+    <p>
+  </div>
+  <center><h3>Demo Video</h3></center><br>
+  <video src="C:\Users\Dell\Videos\Screen Recordings\Screen Recording 2024-12-21 124235.mp4" controls="controls" width="100%" type="video/mp4" align="center">Demo video </video>
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are passionate about providing the best dining experience to our customers.</p>
+  </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="reservation_date">Reservation Date:</label>
-            <input type="date" id="reservation_date" name="reservation_date" required>
-
-            <label for="reservation_time">Reservation Time:</label>
-            <input type="time" id="reservation_time" name="reservation_time" required>
-
-            <label for="guests">Number of Guests:</label>
-            <input type="number" id="guests" name="guests" required min="1">
-
-            <button type="submit">Reserve Table</button>
-        </form>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: bec223069@tjohngroup.com</p>
+    <p>Phone: 8105622136</p>
+    <a href="callto:8105622136" class="icon-link call-icon"><i class="fa-solid fa-phone"></i></a>
+    <a href="mailto:sinchana2919@gmail.com" class="icon-link email-icon"><i class="fa-regular fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/sinchana-r-0bb9b825a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon-link linkedin-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/sincxu_pvt/profilecard/?igsh=MXBqaXE2eXhyZXFnYg==" class="icon-link instagram-icon"><i class="fa-brands fa-instagram"></i></a>
+  </section>
+  
+  <footer class="footer">
+    <p>&copy; 2024 Mini Restaurant  All rights reserved.</p>
+  </footer>
 </body>
 </html>
